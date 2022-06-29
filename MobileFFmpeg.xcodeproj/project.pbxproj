@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2131062228647C6900B57427 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2131062128647C6900B57427 /* AppDelegate.m */; };
+		2131062828647C6900B57427 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2131062728647C6900B57427 /* ViewController.m */; };
+		2131062D28647C6B00B57427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2131062C28647C6B00B57427 /* Assets.xcassets */; };
+		2131063028647C6B00B57427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2131062E28647C6B00B57427 /* LaunchScreen.storyboard */; };
+		2131063328647C6B00B57427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2131063228647C6B00B57427 /* main.m */; };
+		2131089028647FAE00B57427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2131088F28647FAE00B57427 /* Main.storyboard */; };
+		213108942864872200B57427 /* FFmpegTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 213108932864872200B57427 /* FFmpegTool.m */; };
+		FFF5BDB75E2F9185EB5133E4 /* libPods-MobileFFmpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB2DF0EC342A7639CE45C28 /* libPods-MobileFFmpeg.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2131061D28647C6900B57427 /* MobileFFmpeg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileFFmpeg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2131062028647C6900B57427 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2131062128647C6900B57427 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2131062628647C6900B57427 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2131062728647C6900B57427 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2131062C28647C6B00B57427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2131062F28647C6B00B57427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2131063128647C6B00B57427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2131063228647C6B00B57427 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2131088F28647FAE00B57427 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		213108922864872200B57427 /* FFmpegTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFmpegTool.h; sourceTree = "<group>"; };
+		213108932864872200B57427 /* FFmpegTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFmpegTool.m; sourceTree = "<group>"; };
+		253F0D04F21ABB90BF31E00C /* Pods-MobileFFmpeg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileFFmpeg.release.xcconfig"; path = "Target Support Files/Pods-MobileFFmpeg/Pods-MobileFFmpeg.release.xcconfig"; sourceTree = "<group>"; };
+		25F85E3E787357268015FDC0 /* Pods-MobileFFmpeg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileFFmpeg.debug.xcconfig"; path = "Target Support Files/Pods-MobileFFmpeg/Pods-MobileFFmpeg.debug.xcconfig"; sourceTree = "<group>"; };
+		CDB2DF0EC342A7639CE45C28 /* libPods-MobileFFmpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileFFmpeg.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2131061A28647C6900B57427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF5BDB75E2F9185EB5133E4 /* libPods-MobileFFmpeg.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2131061428647C6900B57427 = {
+			isa = PBXGroup;
+			children = (
+				2131061F28647C6900B57427 /* MobileFFmpeg */,
+				2131061E28647C6900B57427 /* Products */,
+				85FE6FB3EE4D0531834DA0F4 /* Pods */,
+				600AE9E1555C8765CDAD2A39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2131061E28647C6900B57427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2131061D28647C6900B57427 /* MobileFFmpeg.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2131061F28647C6900B57427 /* MobileFFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				2131062028647C6900B57427 /* AppDelegate.h */,
+				2131062128647C6900B57427 /* AppDelegate.m */,
+				2131062628647C6900B57427 /* ViewController.h */,
+				2131062728647C6900B57427 /* ViewController.m */,
+				213108922864872200B57427 /* FFmpegTool.h */,
+				213108932864872200B57427 /* FFmpegTool.m */,
+				213108912864869D00B57427 /* SupportFile */,
+			);
+			path = MobileFFmpeg;
+			sourceTree = "<group>";
+		};
+		213108912864869D00B57427 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				2131088F28647FAE00B57427 /* Main.storyboard */,
+				2131062E28647C6B00B57427 /* LaunchScreen.storyboard */,
+				2131063128647C6B00B57427 /* Info.plist */,
+				2131063228647C6B00B57427 /* main.m */,
+				2131062C28647C6B00B57427 /* Assets.xcassets */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		600AE9E1555C8765CDAD2A39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDB2DF0EC342A7639CE45C28 /* libPods-MobileFFmpeg.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85FE6FB3EE4D0531834DA0F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25F85E3E787357268015FDC0 /* Pods-MobileFFmpeg.debug.xcconfig */,
+				253F0D04F21ABB90BF31E00C /* Pods-MobileFFmpeg.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2131061C28647C6900B57427 /* MobileFFmpeg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2131063628647C6B00B57427 /* Build configuration list for PBXNativeTarget "MobileFFmpeg" */;
+			buildPhases = (
+				9C51A5AD54518BE1DDFA3832 /* [CP] Check Pods Manifest.lock */,
+				2131061928647C6900B57427 /* Sources */,
+				2131061A28647C6900B57427 /* Frameworks */,
+				2131061B28647C6900B57427 /* Resources */,
+				B40D2DA84501103F6C9BD37A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileFFmpeg;
+			productName = MobileFFmpeg;
+			productReference = 2131061D28647C6900B57427 /* MobileFFmpeg.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2131061528647C6900B57427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2131061C28647C6900B57427 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2131061828647C6900B57427 /* Build configuration list for PBXProject "MobileFFmpeg" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2131061428647C6900B57427;
+			productRefGroup = 2131061E28647C6900B57427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2131061C28647C6900B57427 /* MobileFFmpeg */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2131061B28647C6900B57427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2131089028647FAE00B57427 /* Main.storyboard in Resources */,
+				2131063028647C6B00B57427 /* LaunchScreen.storyboard in Resources */,
+				2131062D28647C6B00B57427 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C51A5AD54518BE1DDFA3832 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileFFmpeg-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B40D2DA84501103F6C9BD37A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileFFmpeg/Pods-MobileFFmpeg-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileFFmpeg/Pods-MobileFFmpeg-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileFFmpeg/Pods-MobileFFmpeg-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2131061928647C6900B57427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2131062828647C6900B57427 /* ViewController.m in Sources */,
+				2131062228647C6900B57427 /* AppDelegate.m in Sources */,
+				213108942864872200B57427 /* FFmpegTool.m in Sources */,
+				2131063328647C6B00B57427 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2131062E28647C6B00B57427 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2131062F28647C6B00B57427 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2131063428647C6B00B57427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2131063528647C6B00B57427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2131063728647C6B00B57427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F85E3E787357268015FDC0 /* Pods-MobileFFmpeg.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A56VG44D6B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileFFmpeg/SupportFile/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.MobileFFmpeg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2131063828647C6B00B57427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253F0D04F21ABB90BF31E00C /* Pods-MobileFFmpeg.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A56VG44D6B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileFFmpeg/SupportFile/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.MobileFFmpeg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2131061828647C6900B57427 /* Build configuration list for PBXProject "MobileFFmpeg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2131063428647C6B00B57427 /* Debug */,
+				2131063528647C6B00B57427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2131063628647C6B00B57427 /* Build configuration list for PBXNativeTarget "MobileFFmpeg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2131063728647C6B00B57427 /* Debug */,
+				2131063828647C6B00B57427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2131061528647C6900B57427 /* Project object */;
+}
