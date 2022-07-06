@@ -14,25 +14,33 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
   - mobile-ffmpeg-full (4.4)
   - SVProgressHUD (2.2.5)
+  - WMPlayer (5.0.0):
+    - Masonry
 
 DEPENDENCIES:
   - AFNetworking
   - mobile-ffmpeg-full (~> 4.4)
   - SVProgressHUD
+  - WMPlayer
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Masonry
     - mobile-ffmpeg-full
     - SVProgressHUD
+    - WMPlayer
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   mobile-ffmpeg-full: 505c583d91ac1c4fb2b015787e69d83f83fb8f29
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  WMPlayer: a914f80ed5dca7cd9e3a94ec07a2b02eec8c15c0
 
-PODFILE CHECKSUM: 542f78cead09123a0a4a7b316d3e9bc908aa405a
+PODFILE CHECKSUM: c455c2cacbca1756dbf7c9f4a6a348610c36f362
 
 COCOAPODS: 1.11.3

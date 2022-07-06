@@ -6,12 +6,14 @@
 //
 
 #import "ViewController.h"
-
+#import <Masonry/Masonry.h>
 #import <AFNetworking/AFNetworking.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
 #import <AVKit/AVKit.h>
 //#import <MobileVLCKit/MobileVLCKit.h>
+
+#import <WMPlayer/WMPlayer.h>
 
 #import "FFmpegTool.h"
 
@@ -20,8 +22,11 @@
 @property(nonatomic, strong) AVPlayer *avPlayer;
 
 //@property(nonatomic, strong) VLCMediaPlayer *player;
-
 @end
+
+
+NSString * const movUrlV = @"https://www.deskpro.cn/cinccmedia/media/500508/ccrecord/20220523/8926A18703970603C20220523182903AC1303E100126386S20220523182903059418AC1303E100126320CCE.mov";
+NSString * const movUrlA = @"https://www.deskpro.cn/cinccmedia/media/500508/ccrecord/20220523/3013A13676939490C20220523190538AC1303E101137953S20220523190538208057AC1303E101137909CCE.mov";
 
 @implementation ViewController
 
@@ -47,16 +52,10 @@
 }
 
 - (void)clickAudio{
-    
-    NSString *movUrlA = @"https://www.deskpro.cn/cinccmedia/media/500508/ccrecord/20220523/3013A13676939490C20220523190538AC1303E101137953S20220523190538208057AC1303E101137909CCE.mov";
-    
     [self downloadFileByUrl:movUrlA];
 }
 
 - (void)clickVideo{
-    
-    NSString *movUrlV = @"https://www.deskpro.cn/cinccmedia/media/500508/ccrecord/20220523/8926A18703970603C20220523182903AC1303E100126386S20220523182903059418AC1303E100126320CCE.mov";
-    
     [self downloadFileByUrl:movUrlV];
 }
 
@@ -90,7 +89,9 @@
                 
 //                [self playVLCPlayByUrl:resultFileUrl];//VLC播放器
                 
-                [self playAVPlayByUrl:resultFileUrl];//原生框架播放
+//                [self playAVPlayByUrl:resultFileUrl];//原生框架播放
+                
+                [self playWMPlayByUrl:resultFileUrl];
                 
             }];
         }
@@ -121,6 +122,35 @@
 //    }
 //    return _player;
 //}
+
+
+- (void)playWMPlayByUrl:(NSString *)filePath{
+//    WMPlayerModel *playerModel = [WMPlayerModel new];
+//    playerModel.title = @"你好啊小可爱";
+//    playerModel.videoURL = [NSURL URLWithString:movUrlV];
+//    WMPlayer * wmPlayer = [[WMPlayer alloc]initPlayerModel:playerModel];
+//    [self.view addSubview:wmPlayer];
+//    [wmPlayer mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.leading.trailing.top.equalTo(self.view);
+//        make.height.mas_equalTo(wmPlayer.mas_width).multipliedBy(9.0/16);
+//    }];
+//    [wmPlayer play];
+    
+    
+    
+    WMPlayerModel *playerModel = [WMPlayerModel new];
+    playerModel.title = @"你好啊小可爱";
+   NSURL *URL = [NSURL fileURLWithPath:filePath];
+   playerModel.videoURL = [NSURL URLWithString:[URL absoluteString]];
+   WMPlayer * wmPlayer = [WMPlayer playerWithModel:playerModel];
+   [self.view addSubview:wmPlayer];
+   [wmPlayer mas_makeConstraints:^(MASConstraintMaker *make) {
+       make.leading.trailing.top.equalTo(self.view);
+       make.height.mas_equalTo(wmPlayer.mas_width).multipliedBy(9.0/16);
+   }];
+   [wmPlayer play];
+}
+
 
 - (void)playAVPlayByUrl:(NSString *)filePath{
     NSURL *sourceMovieURL = [NSURL fileURLWithPath:filePath];

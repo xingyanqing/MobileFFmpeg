@@ -11,6 +11,9 @@ pod 'AFNetworking'
 pod 'mobile-ffmpeg-full', '~> 4.4'  #音视频处理
 #pod 'MobileVLCKit' #播放器
 #pod 'IJKMediaFramework'
+#pod 'ZFPlayer'
+pod 'WMPlayer'
+#pod 'JWPlayer-SDK'
 
 end
 
