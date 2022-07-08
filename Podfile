@@ -8,12 +8,15 @@ pod 'SVProgressHUD'
 pod 'AFNetworking'
 
 #pod 'FFmpeg'
-pod 'mobile-ffmpeg-full', '~> 4.4'  #音视频处理
+pod 'mobile-ffmpeg-full'
 #pod 'MobileVLCKit' #播放器
 #pod 'IJKMediaFramework'
 #pod 'ZFPlayer'
 pod 'WMPlayer'
 #pod 'JWPlayer-SDK'
+#pod 'FFmpeg'
+pod 'PolyvIJKPlayer'
+pod 'PLPlayerKit'
 
 end
 
