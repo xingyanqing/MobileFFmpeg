@@ -6,17 +6,18 @@ project 'MobileFFmpeg.xcodeproj'
 
 pod 'SVProgressHUD'
 pod 'AFNetworking'
+pod 'Masonry'
 
-#pod 'FFmpeg'
+pod 'Y7IJKMediaPlay'
 pod 'mobile-ffmpeg-full'
 #pod 'MobileVLCKit' #播放器
 #pod 'IJKMediaFramework'
 #pod 'ZFPlayer'
-pod 'WMPlayer'
+#pod 'WMPlayer'
 #pod 'JWPlayer-SDK'
-#pod 'FFmpeg'
-pod 'PolyvIJKPlayer'
-pod 'PLPlayerKit'
+#pod 'FFmpeg', '2.2'
+#pod 'PolyvIJKPlayer'
+#pod 'PLPlayerKit'
 
 end
 

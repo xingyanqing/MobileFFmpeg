@@ -13,15 +13,26 @@
 #import <AVKit/AVKit.h>
 //#import <MobileVLCKit/MobileVLCKit.h>
 
-#import <WMPlayer/WMPlayer.h>
+//#import <WMPlayer/WMPlayer.h>
+//#import <PLPlayerKit/PLPlayerKit.h>
+//#import <PolyvIJKMediaFramework/PLVIJKMediaPlayer.h>
 
 #import "FFmpegTool.h"
+
+//#import <IJKMediaFramework/IJKMediaFramework.h>
 
 @interface ViewController ()
 
 @property(nonatomic, strong) AVPlayer *avPlayer;
 
 //@property(nonatomic, strong) VLCMediaPlayer *player;
+
+//@property(nonatomic, strong) PLPlayer *plPlayer;
+
+
+@property(nonatomic, strong) IJKFFMoviePlayerController *player;
+
+
 @end
 
 
@@ -61,6 +72,19 @@ NSString * const movUrlA = @"https://www.deskpro.cn/cinccmedia/media/500508/ccre
 
 - (void)downloadFileByUrl:(NSString *)url{
     
+//    PLPlayerOption *option = [PLPlayerOption defaultOption];
+//    [option setOptionValue:@15 forKey:PLPlayerOptionKeyTimeoutIntervalForMediaPackets];
+//    [option setOptionValue:@2000 forKey:PLPlayerOptionKeyMaxL1BufferDuration];
+//    [option setOptionValue:@1000 forKey:PLPlayerOptionKeyMaxL2BufferDuration];
+//    [option setOptionValue:@(NO) forKey:PLPlayerOptionKeyVideoToolbox];
+//    [option setOptionValue:@(kPLLogInfo) forKey:PLPlayerOptionKeyLogLevel];
+//    self.plPlayer  = [PLPlayer playerWithURL:[NSURL URLWithString:url] option:option];
+//    [self.view addSubview:self.plPlayer.playerView];
+//    [self.plPlayer play];
+//
+//
+//    return;
+    
     NSString *saveFilePath = [SANDBOX_caches stringByAppendingPathComponent:url.lastPathComponent];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
@@ -72,32 +96,52 @@ NSString * const movUrlA = @"https://www.deskpro.cn/cinccmedia/media/500508/ccre
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         [SVProgressHUD dismiss];
         if(!error){
-                        
+
+            [self playIJKPlayByUrl:filePath];//B站
             
-            [FFmpegTool decode:saveFilePath complete:^(NSString *resultFileUrl, FFFileType fileType, NSError *error) {
-                NSLog(@"=======>   %@", resultFileUrl);
-                
-                if(fileType == FFFileType_audio){
-                    //音频
-                }else if(fileType == FFFileType_video){
-                    //视频
-                }else{
-                    //非mov格式
-                }
-                
-                
-                
+//            [FFmpegTool decode:saveFilePath complete:^(NSString *resultFileUrl, FFFileType fileType, NSError *error) {
+//                NSLog(@"=======>   %@", resultFileUrl);
+
+//                if(fileType == FFFileType_audio){
+//                    //音频
+//                }else if(fileType == FFFileType_video){
+//                    //视频
+//                }else{
+//                    //非mov格式
+//                }
+
 //                [self playVLCPlayByUrl:resultFileUrl];//VLC播放器
+
+                
                 
 //                [self playAVPlayByUrl:resultFileUrl];//原生框架播放
-                
-                [self playWMPlayByUrl:resultFileUrl];
-                
-            }];
+
+//                [self playWMPlayByUrl:resultFileUrl];
+
+//            }];
         }
     }];
      [downloadTask resume];
 }
+
+
+- (void)playIJKPlayByUrl:(NSURL *)filePath{
+
+//    IJKFFOptions *options = [IJKFFOptions optionsByDefault];
+//    self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:filePath withOptions:options];
+//    [self.view addSubview:self.player.view];
+//    [self.player.view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.view).offset(200);
+//        make.leading.trailing.equalTo(self.view);
+//        make.height.mas_equalTo(self.player.view.mas_width).multipliedBy(9.0/16);
+//    }];
+//    [self.player prepareToPlay];
+//    [self.player play];
+}
+
+
+
+
 
 
 //- (void)playVLCPlayByUrl:(NSString *)filePath{
@@ -124,7 +168,7 @@ NSString * const movUrlA = @"https://www.deskpro.cn/cinccmedia/media/500508/ccre
 //}
 
 
-- (void)playWMPlayByUrl:(NSString *)filePath{
+//- (void)playWMPlayByUrl:(NSString *)filePath{
 //    WMPlayerModel *playerModel = [WMPlayerModel new];
 //    playerModel.title = @"你好啊小可爱";
 //    playerModel.videoURL = [NSURL URLWithString:movUrlV];
@@ -136,23 +180,30 @@ NSString * const movUrlA = @"https://www.deskpro.cn/cinccmedia/media/500508/ccre
 //    }];
 //    [wmPlayer play];
     
-    
-    
-    WMPlayerModel *playerModel = [WMPlayerModel new];
-    playerModel.title = @"你好啊小可爱";
-   NSURL *URL = [NSURL fileURLWithPath:filePath];
-   playerModel.videoURL = [NSURL URLWithString:[URL absoluteString]];
-   WMPlayer * wmPlayer = [WMPlayer playerWithModel:playerModel];
-   [self.view addSubview:wmPlayer];
-   [wmPlayer mas_makeConstraints:^(MASConstraintMaker *make) {
-       make.leading.trailing.top.equalTo(self.view);
-       make.height.mas_equalTo(wmPlayer.mas_width).multipliedBy(9.0/16);
-   }];
-   [wmPlayer play];
-}
+
+//    WMPlayerModel *playerModel = [WMPlayerModel new];
+//    playerModel.title = @"你好啊小可爱";
+//   NSURL *URL = [NSURL fileURLWithPath:filePath];
+//   playerModel.videoURL = [NSURL URLWithString:[URL absoluteString]];
+//   WMPlayer * wmPlayer = [WMPlayer playerWithModel:playerModel];
+//   [self.view addSubview:wmPlayer];
+//   [wmPlayer mas_makeConstraints:^(MASConstraintMaker *make) {
+//       make.leading.trailing.top.equalTo(self.view);
+//       make.height.mas_equalTo(wmPlayer.mas_width).multipliedBy(9.0/16);
+//   }];
+//   [wmPlayer play];
+//}
 
 
 - (void)playAVPlayByUrl:(NSString *)filePath{
+    
+    if(self.avPlayer){
+        [self.avPlayer pause];
+        
+//        [self.view.layer removeFromSuperlayer];
+    }
+    
+    
     NSURL *sourceMovieURL = [NSURL fileURLWithPath:filePath];
     AVAsset *movieAsset = [AVURLAsset URLAssetWithURL:sourceMovieURL options:nil];
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:movieAsset];
@@ -162,6 +213,8 @@ NSString * const movUrlA = @"https://www.deskpro.cn/cinccmedia/media/500508/ccre
     playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
     [self.view.layer addSublayer:playerLayer];
     [player play];
+    
+    self.avPlayer = player;
 }
 
 

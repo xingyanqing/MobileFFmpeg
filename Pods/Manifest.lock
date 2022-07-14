@@ -16,41 +16,27 @@ PODS:
     - AFNetworking/NSURLSession
   - Masonry (1.1.0)
   - mobile-ffmpeg-full (4.4)
-  - PLPlayerKit (3.4.8):
-    - PLPlayerKit/iphoneos (= 3.4.8)
-  - PLPlayerKit/iphoneos (3.4.8)
-  - PolyvIJKPlayer (0.9.7)
   - SVProgressHUD (2.2.5)
-  - WMPlayer (5.0.0):
-    - Masonry
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
   - mobile-ffmpeg-full
-  - PLPlayerKit
-  - PolyvIJKPlayer
   - SVProgressHUD
-  - WMPlayer
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
     - mobile-ffmpeg-full
-    - PLPlayerKit
-    - PolyvIJKPlayer
     - SVProgressHUD
-    - WMPlayer
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   mobile-ffmpeg-full: 505c583d91ac1c4fb2b015787e69d83f83fb8f29
-  PLPlayerKit: 3b303b17c2d8abd6f9d8c92f9894143677937b4d
-  PolyvIJKPlayer: 790b20f3e0ef4efdbbc6b9e4dd7bd047bf20696a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  WMPlayer: a914f80ed5dca7cd9e3a94ec07a2b02eec8c15c0
 
-PODFILE CHECKSUM: 0bdec0828574e6124c05470f5d2c412b9a661ad1
+PODFILE CHECKSUM: 964c425b85349ec9f0ac900ce08ebe07335cbfa3
 
 COCOAPODS: 1.11.3
